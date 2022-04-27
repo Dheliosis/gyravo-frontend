@@ -5,20 +5,20 @@
 		<div class="test">
 				<p>test</p>
 		</div>
-	<p></p>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'IndexPage',
+    name: "IndexPage",
 }
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_variables.scss';
 .test {
 	p {
-		color:blue
+		color:$mainBlue
 	}
 }
 </style>
