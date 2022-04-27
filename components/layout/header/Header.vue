@@ -1,17 +1,11 @@
 <template>
-	<header>
-		Ceci est un header
-	</header>
-
+	<header>Ceci est un header</header>
 </template>
 
 <script>
 export default {
-	name: "Header",
-
+	name: 'Header',
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
