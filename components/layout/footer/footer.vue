@@ -1,15 +1,11 @@
 <template>
-	<footer>
-		Ceci est un footer
-	</footer>
+	<header>Ceci est un footer</header>
 </template>
 
 <script>
 export default {
-
+	name: "Footer",
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

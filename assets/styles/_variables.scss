@@ -1,28 +1,27 @@
-
 // --------- COLORS --------- //
-$mainGreen: #03B551;
-$mainBlue: #08B9BD;
-$mainViolet: #6D42F1;
-$white: #FAFAFA;
+$mainGreen: #03b551;
+$mainBlue: #08b9bd;
+$mainViolet: #6d42f1;
+$white: #fafafa;
 $black: #202020;
 
 // --------- FONTS --------- //
 @font-face {
 	font-family: "MontserratAlternates";
 	font-weight: normal;
-	src: url('~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Regular.ttf');
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Regular.ttf");
 }
 @font-face {
 	font-family: "MontserratAlternates";
 	font-weight: bold;
-	src: url('~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Bold.ttf');
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Bold.ttf");
 }
 $primaryFont: "MontserratAlternates";
 
 @font-face {
 	font-family: "Lexend";
 	font-weight: normal;
-	src: url('~/assets/fonts/Lexend/Lexend-Regular.ttf');
+	src: url("~/assets/fonts/Lexend/Lexend-Regular.ttf");
 }
 
-$secondaryFont: "Lexend"
+$secondaryFont: "Lexend";
