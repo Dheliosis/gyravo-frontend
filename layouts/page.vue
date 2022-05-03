@@ -1,12 +1,12 @@
 <template>
-<div>
-	<Header/>
-	<Breadcrumb/>
-	<main>
-		<Nuxt/>
-	</main>
-	<Footer/>
-</div>
+	<div>
+		<Header />
+		<Breadcrumb />
+		<main>
+			<Nuxt />
+		</main>
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -16,11 +16,8 @@ import Breadcrumb from "~/components/navigation/Breadcrumb.vue"
 export default {
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: "Layout",
-	components:{ Header, Footer, Breadcrumb }
-
+	components: { Header, Footer, Breadcrumb },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

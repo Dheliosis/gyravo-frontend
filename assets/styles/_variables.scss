@@ -7,21 +7,21 @@ $black: #202020;
 
 // --------- FONTS --------- //
 @font-face {
-	font-family: 'MontserratAlternates';
+	font-family: "MontserratAlternates";
 	font-weight: normal;
-	src: url('~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Regular.ttf');
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Regular.ttf");
 }
 @font-face {
-	font-family: 'MontserratAlternates';
+	font-family: "MontserratAlternates";
 	font-weight: bold;
-	src: url('~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Bold.ttf');
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Bold.ttf");
 }
-$primaryFont: 'MontserratAlternates';
+$primaryFont: "MontserratAlternates";
 
 @font-face {
-	font-family: 'Lexend';
+	font-family: "Lexend";
 	font-weight: normal;
-	src: url('~/assets/fonts/Lexend/Lexend-Regular.ttf');
+	src: url("~/assets/fonts/Lexend/Lexend-Regular.ttf");
 }
 
-$secondaryFont: 'Lexend';
+$secondaryFont: "Lexend";
