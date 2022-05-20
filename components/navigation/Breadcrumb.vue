@@ -45,6 +45,11 @@ export default {
 					name: "Fitness",
 					link: "/courses/fitness",
 				},
+				{
+					id: "contact",
+					name: "Contact",
+					link: "/contact"
+				}
 			],
 			list: [
 				{
