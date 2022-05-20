@@ -20,4 +20,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import "../assets/styles/_variables.scss";
+
+html{
+	font-family: "Lexend";
+}
+
+</style>
