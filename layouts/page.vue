@@ -25,6 +25,7 @@ export default {
 
 html{
 	font-family: "Lexend";
+	font-size: 18px;
 }
 
 </style>
