@@ -1,5 +1,5 @@
 <template>
-	<header class="flex justify-between items-center">
+	<header class="flex justify-between items-center mx-10 my-5">
 		<a href="/" class="logo">
 			<img src="~/static/logo_gyravo.png"/>
 		</a>
@@ -42,6 +42,7 @@
 
 <script>
 export default {
+	// eslint-disable-next-line vue/multi-word-component-names
 	name: "Header",
 	data: () => {
 		return{
@@ -52,10 +53,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../assets/styles/_variables.scss";
-header{
-	margin: 10px 2rem;
-}
-
 a{
 	color: $mainGreen;
 	margin: 0 1rem;
