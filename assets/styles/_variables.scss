@@ -16,6 +16,11 @@ $black: #202020;
 	font-weight: bold;
 	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-Bold.ttf");
 }
+@font-face {
+	font-family: "MontserratAlternates";
+	font-weight: 900;
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-ExtraBold.ttf");
+}
 $primaryFont: "MontserratAlternates";
 
 @font-face {
