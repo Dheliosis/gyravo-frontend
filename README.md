@@ -1,5 +1,7 @@
 # gyravo-frontend
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac7b42ff-9d01-42d4-aa61-72a135a8bf33/deploy-status)](https://app.netlify.com/sites/gyravo/deploys)
+
 ## Build Setup
 
 ```bash
