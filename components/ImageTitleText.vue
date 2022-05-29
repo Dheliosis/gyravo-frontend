@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="flex flex-col justify-center items-center">
 		<img id="img" :src="require(`@/static/${image}`)" :class="`w-36 h-36 ${rounded ? 'rounded': null}`">
 		<div class="text-center my-2">
 			<p class="font-semibold">{{title}}</p>
@@ -13,7 +13,7 @@ export default {
 	props:{
 		image: {
 			type: String,
-			default: "a"
+			default: "image-accueil.png"
 		},
 		title: {
 			type: String,
