@@ -1,82 +1,91 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+	// Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+	ssr: false,
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'GY.RA.VO',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-  },
+	// Global page headers: https://go.nuxtjs.dev/config-head
+	head: {
+		title: 'GY.RA.VO',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{ hid: 'description', name: 'description', content: '' },
+			{ name: 'format-detection', content: 'telephone=no' },
+		],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+		],
+		script: [
+			{
+				src: "https://kit.fontawesome.com/a076d05399.js",
+				async: true,
+				crossorigin: "anonymous"
+			},
+		],
+	},
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/assets/styles/main.scss',
+	// Global CSS: https://go.nuxtjs.dev/config-css
+	css: [
+		'~/assets/styles/main.scss',
 		'~/assets/styles/_variables.scss',
-  ],
+	],
 	styleResources: {
-    scss: [
-      '~/assets/styles/*.scss',
-    ]
-  },
+		scss: [
+			'~/assets/styles/*.scss',
+		]
+	},
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+	plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+	// Auto import components: https://go.nuxtjs.dev/config-components
+	components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    '@nuxt/postcss8',
-  ],
+	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+	buildModules: [
+		// https://go.nuxtjs.dev/typescript
+		'@nuxt/typescript-build',
+		// https://go.nuxtjs.dev/tailwindcss
+		'@nuxtjs/tailwindcss',
+		'@nuxt/postcss8',
+	],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-  ],
+	// Modules: https://go.nuxtjs.dev/config-modules
+	modules: [
+		// https://go.nuxtjs.dev/axios
+		'@nuxtjs/axios',
+		// https://go.nuxtjs.dev/pwa
+		'@nuxtjs/pwa',
+	],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+	// Axios module configuration: https://go.nuxtjs.dev/config-axios
+	axios: {
+		// Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+		baseURL: '/',
+	},
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en',
-    },
-  },
+	// PWA module configuration: https://go.nuxtjs.dev/pwa
+	pwa: {
+		manifest: {
+			lang: 'en',
+		},
+	},
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build:
-  {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
+	// Build Configuration: https://go.nuxtjs.dev/config-build
+	build:
+	{
+		postcss: {
+			plugins: {
+				tailwindcss: {},
+				autoprefixer: {},
+			},
+		},
 		loaders: {
-      sass: {
-        implementation: require('sass'),
-      },
-      scss: {
-        implementation: require('sass'),
-      },
-  	},
+			sass: {
+				implementation: require('sass'),
+			},
+			scss: {
+				implementation: require('sass'),
+			},
+		},
 	}
 }
