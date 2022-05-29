@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header />
-		<Breadcrumb />
+		<Breadcrumb v-show="$route.path !== '/'"/>
 		<main>
 			<Nuxt />
 		</main>
@@ -17,6 +17,9 @@ export default {
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: "Layout",
 	components: { Header, Footer, Breadcrumb },
+	created(){
+		console.log(this.$route);
+	}
 }
 </script>
 
@@ -24,8 +27,12 @@ export default {
 @import "../assets/styles/_variables.scss";
 
 html{
-	font-family: "Lexend";
+	font-family: $secondaryFont;
 	font-size: 18px;
+}
+
+.montserrat{
+	font-family: $primaryFont;
 }
 
 </style>
