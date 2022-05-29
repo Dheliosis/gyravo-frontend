@@ -49,6 +49,11 @@ export default {
 					id: "contact",
 					name: "Contact",
 					link: "/contact"
+				},
+				{
+					id: "news",
+					name:"Blog",
+					link:"/news",
 				}
 			],
 			list: [
