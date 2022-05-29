@@ -230,9 +230,6 @@ export default {
 	}
 }
 
-.w-3\/10{
-	width: 30%;
-}
 
 
 </style>
