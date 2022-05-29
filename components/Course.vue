@@ -2,8 +2,8 @@
 	<div class="course__image h-full rounded-lg flex flex-col justify-end" :style="`background-image: url('/_nuxt/static/${img}')`">
 	<div class="course__gradient p-5">
 		<h3 class="font-bold text-xl">{{title}}</h3>
-		<div class="flex">
-			<i class="fas fa-clock" style="font-size:24px;"></i>
+		<div class="flex items-center">
+			<font-awesome-icon :icon="`${icon}`" />
 			<p class="ml-3">{{subText}}</p>
 		</div>
 		<a :href="link">{{linkText}}</a>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+/* import font awesome icon component */
+import icon from "../assets/icon"
 export default {
 	props:{
 		img:{
@@ -38,6 +40,8 @@ export default {
 			type: String,
 			default: "Voir le cours"
 		}
+	},
+	components:{
 	}
 
 }

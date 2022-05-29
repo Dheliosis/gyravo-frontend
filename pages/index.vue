@@ -54,7 +54,7 @@
 		<h2 class="pb-10 text-3xl montserrat font-bold">Les cours</h2>
 		<div class="flex flex-wrap justify-between" >
 			<div v-for="(el,index) in courses" :key="index" class=" w-3/10 h-52 mx-2 my-4">
-				<Course :title="el.title" :sub-text="el.subText" :link="el.link" :link-text="el.linkText"></Course>
+				<Course :title="el.title" :sub-text="el.subText" :link="el.link" :link-text="el.linkText" :icon="el.icon"></Course>
 			</div>
 		</div>
 		<div class="flex justify-center my-16">
@@ -130,47 +130,46 @@ export default {
 					description:"Description de l'objectif",
 				},
 			],
-
 			courses: [
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
 				{
 					title:"Nom du cours",
-					icon: "",
-					subText: "12 -99 ans",
+					icon: "fa-solid fa-children",
+					subText: "12 - 99 ans",
 					link:'/courses/1',
 					linkText:'Voir le cours'
 				},
