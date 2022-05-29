@@ -1,6 +1,6 @@
 <template>
 	<nav aria-label="Breadcrumb">
-		<ol role="list" class="flex items-center space-x-1 text-sm text-gray-500">
+		<ol role="list" class="flex items-center space-x-1 text-sm">
 			<li v-for="(el, value) in list" :key="el.name" class="flex items-center">
 				<a class="block transition-colors hover:text-gray-700" :href="el.link">
 					{{ el.name }}
@@ -49,6 +49,11 @@ export default {
 					id: "contact",
 					name: "Contact",
 					link: "/contact"
+				},
+				{
+					id: "news",
+					name:"Blog",
+					link:"/news",
 				}
 			],
 			list: [
