@@ -18,8 +18,8 @@ $black: #202020;
 }
 @font-face {
 	font-family: "MontserratAlternates";
-	font-weight: 900;
-	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-ExtraBold.ttf");
+	font-weight: semibold;
+	src: url("~/assets/fonts/Monteserrat\ Alternates/MontserratAlternates-SemiBold.ttf");
 }
 $primaryFont: "MontserratAlternates";
 
@@ -27,6 +27,12 @@ $primaryFont: "MontserratAlternates";
 	font-family: "Lexend";
 	font-weight: normal;
 	src: url("~/assets/fonts/Lexend/Lexend-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lexend";
+	font-weight: bold;
+	src: url("~/assets/fonts/Lexend/Lexend-Bold.ttf");
 }
 
 $secondaryFont: "Lexend";
