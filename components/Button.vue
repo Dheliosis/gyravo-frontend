@@ -88,6 +88,9 @@ button{
 .textViolet{
 	color: $mainViolet;
 	border-color: $mainViolet;
+	&:hover{
+		background-color: $secondaryViolet;
+	}
 }
 
 .textWhite{
