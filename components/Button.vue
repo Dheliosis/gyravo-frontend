@@ -1,11 +1,13 @@
 <template>
 	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`">
-		<i v-if="icon !== 'none'" :class="`fas ${icon}`" style="font-size:24px;"></i>
+		<font-awesome-icon :icon="`${icon}`" />
 		{{text}}
 		</button>
 </template>
 
 <script>
+import icon from "../assets/icon"
+
 export default {
 	props:{
 		text: {
