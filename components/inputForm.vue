@@ -1,7 +1,9 @@
 <template>
 	<div class="flex flex-col">
 		<label :for="id" class="font-bold text-xl mb-1 ml-3">{{label}}</label>
-		<input :id="id" v-model="value" :type="type" :class="`rounded-full w-full px-3 py-2 ${error? 'error': null}`" :placeholder="label" @change="onChange"/>
+		<textarea v-if="type === 'textarea'" :id="id" v-model="value" :type="type" rows="10" :class="`w-full px-3 py-2 ${error? 'error': null}`" :placeholder="label" @change="onChange"></textarea>
+		<input v-else :id="id" v-model="value" :type="type" :class="`rounded-full w-full px-3 py-2 ${error? 'error': null}`" :placeholder="label" @change="onChange"/>
+
 		<p v-if="error" class="ml-3  mt-2 textError">{{textError}}</p>
 	</div>
 </template>
@@ -49,13 +51,17 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
 
-input{
+input, textarea{
 	background-color: $grey;
 
 	&:active, &:focus, &:focus-visible{
 		outline-style: solid;
 		outline-color: $mainBlue !important;
 	}
+}
+
+textarea{
+	border-radius: 30px;
 }
 .error{
 		outline-style: solid;
