@@ -1,13 +1,13 @@
 <template>
 	<div>
 		<TitlePage title="Se connecter" color="blue"></TitlePage>
-		<div class="flex flex-col justify-center items-center h-80 my-28">
+		<div class="flex flex-col justify-center items-center h-80 my-28 mx-28">
 			<p class="mb-6 textEror" v-if="error">{{errorText}}</p>
-			<form class="w-80 mb-14">
+			<form class="w-4/12 mb-14">
 				<InputForm
 					id="email"
 					class="mb-8"
-					label="Email"
+					label="E-mail"
 					type="email"
 					:value="email"
 					:error="emailError"
@@ -47,9 +47,9 @@ export default {
 			email:"",
 			password:"",
 			emailError: false,
-			emailTextError:"Veuillez rentrer un email valide",
+			emailTextError:"Veuillez renseigner un email valide",
 			passwordError: false,
-			passwordTextError:"Veuillez rentrer un email valide",
+			passwordTextError:"Veuillez renseigner un mot de passe valide",
 			error:false,
 			errorText: "Une erreur est survenue, veuillez rééssayer.",
 		}
