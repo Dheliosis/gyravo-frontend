@@ -1,5 +1,5 @@
 <template>
-	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`">
+	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`" @click="onClick">
 		<font-awesome-icon :icon="`${icon}`" />
 		{{text}}
 		</button>
@@ -28,10 +28,12 @@ export default {
 		}
 	},
 
-	created(){
-
-
+	methods:{
+		onClick(){
+			this.$emit("OnClick")
+		}
 	}
+
 
 }
 </script>
@@ -52,6 +54,10 @@ button{
 
 	&:hover{
 		background-color: $mainBlue;
+	}
+
+	&:active{
+		background-color: $tertiaryBlue;
 	}
 }
 
