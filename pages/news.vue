@@ -1,9 +1,6 @@
 <template>
 <div>
-	<div class="px-56 blog__header py-16 text-white">
-		<Breadcrumb></Breadcrumb>
-		<h2 class=" pt-5 text-3xl montserrat font-bold">Le blog</h2>
-	</div>
+	<TitlePage title="Le blog" color="green"></TitlePage>
 
 	<div class="px-56 py-20">
 		<div class="flex justify-end">
@@ -27,8 +24,9 @@
 import Button from '~/components/Button.vue'
 import Course from '~/components/Course.vue'
 import Breadcrumb from '~/components/navigation/Breadcrumb.vue'
+import TitlePage from '~/components/titlePage.vue'
 export default {
-  components: { Breadcrumb, Button, Course },
+  components: { Breadcrumb, Button, Course, TitlePage },
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: "news",
 	layout: "page",
