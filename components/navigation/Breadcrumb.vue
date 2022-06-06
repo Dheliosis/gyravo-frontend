@@ -54,7 +54,17 @@ export default {
 					id: "news",
 					name:"Blog",
 					link:"/news",
-				}
+				},
+				{
+					id: "login",
+					name:"Connexion",
+					link:"/signin",
+				},
+				{
+					id: "signup",
+					name:"Inscription",
+					link:"/singup",
+				},
 			],
 			list: [
 				{
