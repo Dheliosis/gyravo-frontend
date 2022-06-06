@@ -30,8 +30,8 @@ export default {
 @import "../assets/styles/_variables.scss";
 
 .title__header{
-		-webkit-clip-path: polygon(100% 0, 100% 85%, 52% 100%, 0 100%, 0 0);
-		clip-path: polygon(100% 0, 100% 85%, 52% 100%, 0 100%, 0 0);
+		-webkit-clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
 
 	}
 
