@@ -65,6 +65,11 @@ export default {
 					name:"Inscription",
 					link:"/singup",
 				},
+				{
+					id: "profile",
+					name:"Mon profil",
+					link:"/profile"
+				}
 			],
 			list: [
 				{
