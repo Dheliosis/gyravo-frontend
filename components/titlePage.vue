@@ -1,7 +1,7 @@
 <template>
 	<div :class="`px-56 title__header py-16 text-white ${color}`">
 		<Breadcrumb></Breadcrumb>
-		<h2 class=" pt-5 text-3xl montserrat font-bold">{{title}}</h2>
+		<h1 class=" pt-5 text-3xl montserrat font-bold">{{title}}</h1>
 	</div>
 </template>
 
