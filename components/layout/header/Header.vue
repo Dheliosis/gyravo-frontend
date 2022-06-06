@@ -27,7 +27,7 @@
 						</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link v-if="!login" class="nuxt-link violet" to="/singup">
+						<nuxt-link v-if="!login" class="nuxt-link violet" to="/signup">
 							S'inscrire
 						</nuxt-link>
 					</li>
