@@ -3,11 +3,11 @@
 		<TitlePage color="violet" title="S'inscrire"></TitlePage>
 		<div class="flex flex-col justify-center items-center min-h-80 my-28 mx-28">
 			<p class="mb-6 textEror" v-if="error">{{errorText}}</p>
-			<form class="w-4/12 mb-14">
+			<form class="min-w-4/12 mb-14">
 				<div class="flex justify-between">
 					<InputForm
 						id="lastname"
-						class="mb-8"
+						class="mb-8 mr-4"
 						label="Nom"
 						type="text"
 						:value="lastname"
