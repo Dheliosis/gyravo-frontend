@@ -27,6 +27,7 @@ export default {
 html{
 	font-family: $secondaryFont;
 	font-size: 18px;
+	color: $black
 }
 
 .montserrat{

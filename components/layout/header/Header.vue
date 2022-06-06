@@ -1,36 +1,47 @@
 <template>
 	<header class="flex justify-between items-center mx-10 my-5">
-		<a href="/" class="logo">
+		<nuxt-link class="nuxt-link logo" to="/">
 			<img src="~/static/logo_gyravo.png"/>
-		</a>
+		</nuxt-link>
 
 		<div class="flex items-center">
 				<ul class="flex content-center">
 					<li>
-						<a href="/courses">
+						<nuxt-link class="nuxt-link" to="/courses">
 							Les cours
-						</a>
+						</nuxt-link>
 					</li>
 						<li>
-						<a href="/news">
+						<nuxt-link class="nuxt-link" to="/news">
 							Le blog
-						</a>
+						</nuxt-link>
 					</li>
 					<li>
-						<a href="/contact">
+						<nuxt-link class="nuxt-link" to="/contact">
 							Contact
-						</a>
+						</nuxt-link>
 					</li>
 					<li>
-						<a href="/login" id="logIn">
+						<nuxt-link v-if="!login" class="nuxt-link blue" to="/login">
 							Se connecter
-						</a>
+						</nuxt-link>
 					</li>
 					<li>
-						<a href="/singup" id="signUp">
+						<nuxt-link v-if="!login" class="nuxt-link violet" to="/singup">
 							S'inscrire
+						</nuxt-link>
+					</li>
+					<li>
+						<nuxt-link v-if="login" class="nuxt-link blue" to="/profile">
+							Mon profil
+						</nuxt-link>
+					</li>
+					<li>
+						<a v-if="login" class="nuxt-link violet" href="/" @click="logout">
+							Se déconnecter
 						</a>
 					</li>
+
 				</ul>
 
 				<img class="w-9 h-9 ml-3" src="../../../static/accessibilite.png">
@@ -46,25 +57,33 @@ export default {
 	name: "Header",
 	data: () => {
 		return{
+			login: localStorage.getItem('login')
 		}
-	}
+	},
+
+	methods:{
+		logout(){
+			localStorage.removeItem('login')
+		}
+	},
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../../assets/styles/_variables.scss";
-a{
+.nuxt-link {
 	color: $mainGreen;
 	margin: 0 1rem;
 }
 
-#signUp{
+.violet{
 	color: $mainViolet
 }
 
-#logIn{
+.blue{
 	color: $mainBlue
 }
+
 
 .logo{
 	width: 15rem;

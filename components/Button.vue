@@ -1,11 +1,13 @@
 <template>
-	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`">
-		<i v-if="icon !== 'none'" :class="`fas ${icon}`" style="font-size:24px;"></i>
+	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`" @click="onClick">
+		<font-awesome-icon :icon="`${icon}`" />
 		{{text}}
 		</button>
 </template>
 
 <script>
+import icon from "../assets/icon"
+
 export default {
 	props:{
 		text: {
@@ -26,10 +28,12 @@ export default {
 		}
 	},
 
-	created(){
-
-
+	methods:{
+		onClick(){
+			this.$emit("OnClick")
+		}
 	}
+
 
 }
 </script>
@@ -50,6 +54,10 @@ button{
 
 	&:hover{
 		background-color: $mainBlue;
+	}
+
+	&:active{
+		background-color: $tertiaryBlue;
 	}
 }
 
@@ -80,6 +88,9 @@ button{
 .textViolet{
 	color: $mainViolet;
 	border-color: $mainViolet;
+	&:hover{
+		background-color: $secondaryViolet;
+	}
 }
 
 .textWhite{

@@ -1,9 +1,6 @@
 <template>
 <div>
-	<div class="px-56 courses__header py-16 text-white">
-		<Breadcrumb></Breadcrumb>
-		<h2 class=" pt-5 text-3xl montserrat font-bold">Les cours</h2>
-	</div>
+	<TitlePage title="Les cours" color="green"></TitlePage>
 
 	<div class="px-56 py-20">
 		<div class="flex justify-end">
@@ -22,9 +19,9 @@
 <script>
 import Button from '~/components/Button.vue'
 import Course from '~/components/Course.vue'
-import Breadcrumb from '~/components/navigation/Breadcrumb.vue'
+import TitlePage from '~/components/titlePage.vue'
 export default {
-  components: { Breadcrumb, Button, Course },
+	components: { Button, Course, TitlePage },
 	// eslint-disable-next-line vue/multi-word-component-names
 	name: "courses",
 	layout: "page",
@@ -93,17 +90,3 @@ export default {
 	}
 }
 </script>
-
-<style lang="scss" scoped>
-@import "../assets/styles/_variables.scss";
-
-.courses{
-	&__header{
-		-webkit-clip-path: polygon(100% 0, 100% 85%, 52% 100%, 0 100%, 0 0);
-		clip-path: polygon(100% 0, 100% 85%, 52% 100%, 0 100%, 0 0);
-		background-color: $mainGreen;
-	}
-
-}
-
-</style>
