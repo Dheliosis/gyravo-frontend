@@ -1,7 +1,11 @@
 <template>
 	<div :class="`px-56 title__header py-16 text-white ${color}`">
 		<Breadcrumb></Breadcrumb>
-		<h1 class=" pt-5 text-3xl montserrat font-bold">{{title}}</h1>
+		<div v-if="profilePicture" class="mt-5 flex items-center w-fit">
+			<ProfilePicture></ProfilePicture>
+			<h1 class="text-3xl montserrat font-bold ml-5">{{title}}</h1>
+		</div>
+		<h1 v-else class=" mt-5 text-3xl montserrat font-bold">{{title}}</h1>
 	</div>
 </template>
 
@@ -20,6 +24,10 @@ export default {
 		color: {
 			type: String,
 			default: "green"
+		},
+		profilePicture: {
+			type: Boolean,
+			default: false
 		}
 	}
 
