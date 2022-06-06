@@ -32,7 +32,7 @@ export default {
 			completedList: [
 				{
 					id: "home",
-					name: "Home",
+					name: "Accueil",
 					link: "/",
 				},
 				{
@@ -69,7 +69,7 @@ export default {
 			list: [
 				{
 					id: "home",
-					name: "Home",
+					name: "Accueil",
 					link: "/",
 				},
 			],
