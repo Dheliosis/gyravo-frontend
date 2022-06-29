@@ -3,21 +3,21 @@
 		<Breadcrumb></Breadcrumb>
 		<div v-if="profilePicture" class="mt-5 flex items-center w-fit">
 			<ProfilePicture></ProfilePicture>
-			<h1 class="text-3xl montserrat font-bold ml-5">{{title}}</h1>
+			<h1 class="text-3xl montserrat font-bold ml-5">{{ title }}</h1>
 		</div>
-		<h1 v-else class=" mt-5 text-3xl montserrat font-bold">{{title}}</h1>
+		<h1 v-else class=" mt-5 text-3xl montserrat font-bold">{{ title }}</h1>
 	</div>
 </template>
 
 <script>
 import Breadcrumb from './navigation/Breadcrumb.vue'
 export default {
-	components:{
+	components: {
 		Breadcrumb
 	},
 
-	props:{
-		title:{
+	props: {
+		title: {
 			type: String,
 			default: "Enter title"
 		},
@@ -37,22 +37,21 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
 
-.title__header{
-		-webkit-clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
-		clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
+.title__header {
+	-webkit-clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
+	clip-path: polygon(100% 0, 100% 70%, 55% 100%, 0 100%, 0 0);
 
-	}
+}
 
-.green{
+.green {
 	background-color: $mainGreen;
 }
 
-.violet{
+.violet {
 	background-color: $mainViolet;
 }
 
-.blue{
+.blue {
 	background-color: $mainBlue;
 }
-
 </style>

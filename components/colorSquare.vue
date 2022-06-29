@@ -1,27 +1,27 @@
 <template>
 	<div :class="`${backgroundColor}Background w-fit p-6 rounded-2xl`">
-		<p :class="`font-bold ${textColor}Text my-2`">{{title}}</p>
-		<p v-if="subTitle !== ''" class="font-bold text-white my-2">{{subTitle}}</p>
+		<p :class="`font-bold ${textColor}Text my-2`">{{ title }}</p>
+		<p v-if="subTitle !== ''" class="font-bold text-white my-2">{{ subTitle }}</p>
 		<slot></slot>
 	</div>
 </template>
 
 <script>
 export default {
-	props:{
-		backgroundColor:{
+	props: {
+		backgroundColor: {
 			type: String,
 			default: "green"
 		},
-		textColor:{
+		textColor: {
 			type: String,
 			default: "green"
 		},
-		title:{
+		title: {
 			type: String,
 			default: "Enter a title"
 		},
-		subTitle:{
+		subTitle: {
 			type: String,
 			default: ""
 		},
@@ -32,29 +32,30 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
-.greenText{
+
+.greenText {
 	color: $mainGreen
 }
 
-.violetText{
+.violetText {
 	color: $mainViolet;
 }
 
-.blueText{
+.blueText {
 	color: $mainBlue;
 }
 
-.greenBackground{
+.greenBackground {
 	background-color: $mainGreen25;
 
 }
 
-.violetBackground{
+.violetBackground {
 	background-color: $mainViolet25;
 
 }
 
-.blueBackground{
+.blueBackground {
 	background-color: $mainBlue25;
 
 }

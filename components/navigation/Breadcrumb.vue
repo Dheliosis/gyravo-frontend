@@ -5,18 +5,11 @@
 				<a class="block transition-colors hover:text-gray-700" :href="el.link">
 					{{ el.name }}
 				</a>
-				<svg
-					v-if="value !== list.length - 1"
-					xmlns="http://www.w3.org/2000/svg"
-					class="w-4 h-4"
-					viewBox="0 0 20 20"
-					fill="currentColor"
-				>
-					<path
-						fill-rule="evenodd"
+				<svg v-if="value !== list.length - 1" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
+					viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd"
 						d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-						clip-rule="evenodd"
-					/>
+						clip-rule="evenodd" />
 				</svg>
 			</li>
 		</ol>
@@ -52,23 +45,23 @@ export default {
 				},
 				{
 					id: "news",
-					name:"Blog",
-					link:"/news",
+					name: "Blog",
+					link: "/news",
 				},
 				{
 					id: "login",
-					name:"Connexion",
-					link:"/signin",
+					name: "Connexion",
+					link: "/signin",
 				},
 				{
 					id: "signup",
-					name:"Inscription",
-					link:"/singup",
+					name: "Inscription",
+					link: "/singup",
 				},
 				{
 					id: "profile",
-					name:"Mon profil",
-					link:"/profile"
+					name: "Mon profil",
+					link: "/profile"
 				}
 			],
 			list: [
@@ -92,4 +85,5 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+</style>

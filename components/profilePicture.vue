@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<img :src="require(`@/static/${image}`)" class="w-32 border-8 rounded-full"/>
+		<img :src="require(`@/static/${image}`)" class="w-32 border-8 rounded-full" />
 	</div>
 </template>
 
 <script>
 export default {
-	props:{
-		image:{
+	props: {
+		image: {
 			type: String,
 			default: "photo-profil.png"
 		}
@@ -17,5 +17,4 @@ export default {
 </script>
 
 <style>
-
 </style>
