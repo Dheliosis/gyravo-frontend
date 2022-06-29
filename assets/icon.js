@@ -11,6 +11,8 @@ import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faPaperclip } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -24,5 +26,7 @@ library.add(faClock)
 library.add(faXmark)
 library.add(faPaperclip)
 library.add(faPlus)
+library.add(faAlignJustify)
+library.add(faDollarSign)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

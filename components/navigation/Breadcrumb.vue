@@ -34,10 +34,51 @@ export default {
 					link: "/courses",
 				},
 				{
-					id: "fitness",
-					name: "Fitness",
-					link: "/courses/fitness",
+					id: "course",
+					name: "Cours",
+					link: "/courses",
 				},
+				{
+					id: "1",
+					name: "Fitness",
+					link: "/course/1",
+				},
+				{
+					id: "2",
+					name: "Rythm'Dance et Soft-Fitness",
+					link: "/course/1",
+				},
+				{
+					id: "3",
+					name: "Gym Ball - FitBall",
+					link: "/course/1",
+				},
+				{
+					id: "4",
+					name: "Gym douce, body-zen",
+					link: "/course/1",
+				},
+				{
+					id: "5",
+					name: "Marche nordique",
+					link: "/course/1",
+				},
+				{
+					id: "6",
+					name: "Acti-gym séniors",
+					link: "/course/1",
+				},
+				{
+					id: "7",
+					name: "Gym équilibre",
+					link: "/course/1",
+				},
+				{
+					id: "8",
+					name: "Gym loisir plaisir pour grandir",
+					link: "/course/1",
+				},
+
 				{
 					id: "contact",
 					name: "Contact",
