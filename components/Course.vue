@@ -7,7 +7,7 @@
 				<font-awesome-icon :icon="`${icon}`" />
 				<p class="ml-3">{{ subText }}</p>
 			</div>
-			<a :href="link">{{ linkText }}</a>
+			<nuxt-link :to="link">{{ linkText }}</nuxt-link>
 		</div>
 	</div>
 </template>
