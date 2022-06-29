@@ -1,7 +1,7 @@
 <template>
 	<div :class="`text-sm flex items-center cursor-pointer ${color}`">
-		<font-awesome-icon :icon="`${icon}`" class="mr-4"/>
-		<p class="underline">{{text}}</p>
+		<font-awesome-icon :icon="`${icon}`" class="mr-4" />
+		<p class="underline">{{ text }}</p>
 	</div>
 </template>
 
@@ -10,16 +10,16 @@ import icon from "../assets/icon"
 
 export default {
 
-	props:{
-		icon:{
+	props: {
+		icon: {
 			type: String,
 			default: "none"
 		},
-		color:{
+		color: {
 			type: String,
 			default: "black",
 		},
-		text:{
+		text: {
 			type: String,
 			default: "Enter a text"
 		}
@@ -31,36 +31,37 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
 
-div{
+div {
 	transition: 0.3s;
 }
-.green{
+
+.green {
 	color: $mainGreen;
-	&:hover{
+
+	&:hover {
 		color: $mainBlue
 	}
 
-	&:active{
+	&:active {
 		color: $tertiaryBlue
 	}
 }
 
-.violet{
+.violet {
 	color: $mainViolet;
 }
 
-.blue{
+.blue {
 	color: $mainBlue;
 }
 
-.black{
-	&:hover{
+.black {
+	&:hover {
 		color: $mainGreen
 	}
 
-	&:active{
+	&:active {
 		color: $tertiaryGreen,
 	}
 }
-
 </style>

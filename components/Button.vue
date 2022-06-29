@@ -1,35 +1,34 @@
 <template>
 	<button :class="`${backgroundColor} ${textColor} border-2 rounded-full px-8 py-2 font-bold`" @click="onClick">
 		<font-awesome-icon :icon="`${icon}`" />
-		{{text}}
-		</button>
+		{{ text }}
+	</button>
 </template>
 
 <script>
-import icon from "../assets/icon"
 
 export default {
-	props:{
+	props: {
 		text: {
 			type: String,
 			default: "Text button"
 		},
-		backgroundColor:{
+		backgroundColor: {
 			type: String,
 			default: "white"
 		},
-		textColor:{
+		textColor: {
 			type: String,
 			default: "black"
 		},
-		icon:{
+		icon: {
 			type: String,
 			default: "none"
 		}
 	},
 
-	methods:{
-		onClick(){
+	methods: {
+		onClick() {
 			this.$emit("OnClick")
 		}
 	}
@@ -41,62 +40,63 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
 
-button{
+button {
 	transition: 0.5s;
 }
 
-.backgroundBlue{
+.backgroundBlue {
 	background-color: $mainBlue;
 }
 
-.backgroundGreen{
+.backgroundGreen {
 	background-color: $mainGreen;
 
-	&:hover{
+	&:hover {
 		background-color: $mainBlue;
 	}
 
-	&:active{
+	&:active {
 		background-color: $tertiaryBlue;
 	}
 }
 
-.backgroundViolet{
+.backgroundViolet {
 	background-color: $mainViolet;
 }
 
-.backgroundWhite{
+.backgroundWhite {
 	background-color: $white;
 }
 
-.textBlue{
+.textBlue {
 	color: $mainBlue;
 	border-color: $mainBlue;
-	&:hover{
+
+	&:hover {
 		background-color: $secondaryBlue;
 	}
 }
 
-.textGreen{
+.textGreen {
 	color: $mainGreen;
 	border-color: $mainGreen;
-	&:hover{
+
+	&:hover {
 		background-color: $secondaryGreen;
 	}
 }
 
-.textViolet{
+.textViolet {
 	color: $mainViolet;
 	border-color: $mainViolet;
-	&:hover{
+
+	&:hover {
 		background-color: $secondaryViolet;
 	}
 }
 
-.textWhite{
+.textWhite {
 	color: $white;
 	border-color: $white;
 }
-
-
 </style>

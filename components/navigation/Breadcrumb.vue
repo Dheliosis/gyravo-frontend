@@ -5,18 +5,11 @@
 				<a class="block transition-colors hover:text-gray-700" :href="el.link">
 					{{ el.name }}
 				</a>
-				<svg
-					v-if="value !== list.length - 1"
-					xmlns="http://www.w3.org/2000/svg"
-					class="w-4 h-4"
-					viewBox="0 0 20 20"
-					fill="currentColor"
-				>
-					<path
-						fill-rule="evenodd"
+				<svg v-if="value !== list.length - 1" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
+					viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd"
 						d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-						clip-rule="evenodd"
-					/>
+						clip-rule="evenodd" />
 				</svg>
 			</li>
 		</ol>
@@ -41,9 +34,9 @@ export default {
 					link: "/courses",
 				},
 				{
-					id: "fitness",
-					name: "Fitness",
-					link: "/courses/fitness",
+					id: "course",
+					name: "Cours",
+					link: "/courses",
 				},
 				{
 					id: "contact",
@@ -52,24 +45,69 @@ export default {
 				},
 				{
 					id: "news",
-					name:"Blog",
-					link:"/news",
+					name: "Blog",
+					link: "/news",
+				},
+				{
+					id: "new",
+					name: "Blog",
+					link: "/news",
 				},
 				{
 					id: "login",
-					name:"Connexion",
-					link:"/signin",
+					name: "Connexion",
+					link: "/signin",
 				},
 				{
 					id: "signup",
-					name:"Inscription",
-					link:"/singup",
+					name: "Inscription",
+					link: "/singup",
 				},
 				{
 					id: "profile",
-					name:"Mon profil",
-					link:"/profile"
-				}
+					name: "Mon profil",
+					link: "/profile"
+				},
+				// {
+				// 	id: "1",
+				// 	name: "Fitness",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "2",
+				// 	name: "Rythm'Dance et Soft-Fitness",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "3",
+				// 	name: "Gym Ball - FitBall",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "4",
+				// 	name: "Gym douce, body-zen",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "5",
+				// 	name: "Marche nordique",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "6",
+				// 	name: "Acti-gym séniors",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "7",
+				// 	name: "Gym équilibre",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "8",
+				// 	name: "Gym loisir plaisir pour grandir",
+				// 	link: "/course/1",
+				// },
 			],
 			list: [
 				{
@@ -83,6 +121,7 @@ export default {
 	mounted() {
 		let splitPath = this.$route.fullPath.split("/")
 		splitPath = splitPath.splice(1)
+		console.log(splitPath);
 		for (const el of this.completedList) {
 			if (splitPath.includes(el.id)) {
 				this.list.push(el)
@@ -92,4 +131,5 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+</style>

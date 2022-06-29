@@ -12,17 +12,17 @@
 							Accueil
 						</a>
 					</li>
-				<li>
+					<li>
 						<a href="/courses">
 							Les cours
 						</a>
 					</li>
-				<li>
+					<li>
 						<a href="/news">
 							Le blog
 						</a>
 					</li>
-				<li>
+					<li>
 						<a href="/contact">
 							Contact
 						</a>
@@ -47,9 +47,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../assets/styles/variables";
-footer{
+
+footer {
 	color: white;
 	background-color: $mainViolet;
 }
-
 </style>
