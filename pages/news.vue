@@ -38,63 +38,63 @@ export default {
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 				{
 					title: "Nom de l'article",
 					icon: "fa-solid fa-calendar-days",
 					subText: "12 Juin 2022",
-					link: "/news/1",
+					link: "/new/1",
 					linkText: "Voir l'article"
 				},
 			],

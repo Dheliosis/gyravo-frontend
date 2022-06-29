@@ -39,53 +39,17 @@ export default {
 					link: "/courses",
 				},
 				{
-					id: "1",
-					name: "Fitness",
-					link: "/course/1",
-				},
-				{
-					id: "2",
-					name: "Rythm'Dance et Soft-Fitness",
-					link: "/course/1",
-				},
-				{
-					id: "3",
-					name: "Gym Ball - FitBall",
-					link: "/course/1",
-				},
-				{
-					id: "4",
-					name: "Gym douce, body-zen",
-					link: "/course/1",
-				},
-				{
-					id: "5",
-					name: "Marche nordique",
-					link: "/course/1",
-				},
-				{
-					id: "6",
-					name: "Acti-gym séniors",
-					link: "/course/1",
-				},
-				{
-					id: "7",
-					name: "Gym équilibre",
-					link: "/course/1",
-				},
-				{
-					id: "8",
-					name: "Gym loisir plaisir pour grandir",
-					link: "/course/1",
-				},
-
-				{
 					id: "contact",
 					name: "Contact",
 					link: "/contact"
 				},
 				{
 					id: "news",
+					name: "Blog",
+					link: "/news",
+				},
+				{
+					id: "new",
 					name: "Blog",
 					link: "/news",
 				},
@@ -103,7 +67,47 @@ export default {
 					id: "profile",
 					name: "Mon profil",
 					link: "/profile"
-				}
+				},
+				// {
+				// 	id: "1",
+				// 	name: "Fitness",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "2",
+				// 	name: "Rythm'Dance et Soft-Fitness",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "3",
+				// 	name: "Gym Ball - FitBall",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "4",
+				// 	name: "Gym douce, body-zen",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "5",
+				// 	name: "Marche nordique",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "6",
+				// 	name: "Acti-gym séniors",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "7",
+				// 	name: "Gym équilibre",
+				// 	link: "/course/1",
+				// },
+				// {
+				// 	id: "8",
+				// 	name: "Gym loisir plaisir pour grandir",
+				// 	link: "/course/1",
+				// },
 			],
 			list: [
 				{
@@ -117,6 +121,7 @@ export default {
 	mounted() {
 		let splitPath = this.$route.fullPath.split("/")
 		splitPath = splitPath.splice(1)
+		console.log(splitPath);
 		for (const el of this.completedList) {
 			if (splitPath.includes(el.id)) {
 				this.list.push(el)
