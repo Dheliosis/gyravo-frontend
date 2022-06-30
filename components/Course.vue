@@ -19,7 +19,7 @@ export default {
 	props: {
 		img: {
 			type: String,
-			default: "image-accueil.png"
+			default: "velo-couleur.png"
 		},
 		title: {
 			type: String,

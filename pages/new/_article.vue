@@ -57,7 +57,7 @@
 						</div>
 
 						<div class="flex items-center py-32">
-							<img id="img" :src="require(`@/static/photo-profil.png`)" :class="`w-36 h-36 rounded`">
+							<img id="img" :src="require(`@/static/dame-1.png`)" :class="`w-36 h-36 rounded`">
 							<p class="mx-10 text-xl"><span class="font-bold">Isabelle Fassot,</span> Professeur</p>
 
 						</div>
