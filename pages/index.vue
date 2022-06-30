@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div>
-				<h2 class="mx-56 mt-16 pb-16 text-3xl montserrat">GY.RA.VO en quelques mots ...</h2>
+				<h2 class="mx-56 mt-16 pb-16 text-3xl montserrat">GY.RA.VO. en quelques mots ...</h2>
 			</div>
 		</div>
 		<div>
