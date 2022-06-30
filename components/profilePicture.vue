@@ -9,7 +9,7 @@ export default {
 	props: {
 		image: {
 			type: String,
-			default: "photo-profil.png"
+			default: "dame-4.png"
 		}
 	}
 
