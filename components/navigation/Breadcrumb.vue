@@ -68,6 +68,11 @@ export default {
 					name: "Mon profil",
 					link: "/profile"
 				},
+				{
+					id: "cgu",
+					name: "CGU",
+					link: "/cgu"
+				}
 				// {
 				// 	id: "1",
 				// 	name: "Fitness",
