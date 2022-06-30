@@ -15,7 +15,8 @@
 		</div>
 
 		<div class="flex justify-center pb-20">
-			<div class="animate-spin w-fit">Ajouter un loader</div>
+			<img src="../static/loader.png" class="animate-spin w-fit" />
+
 		</div>
 
 	</div>
