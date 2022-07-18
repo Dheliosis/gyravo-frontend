@@ -27,6 +27,11 @@
 							Contact
 						</a>
 					</li>
+					<li>
+						<a href="/cgu">
+							CGU
+						</a>
+					</li>
 				</ul>
 			</div>
 
