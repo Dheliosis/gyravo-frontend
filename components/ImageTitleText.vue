@@ -1,9 +1,9 @@
 <template>
 	<div class="flex flex-col justify-center items-center">
-		<img id="img" :src="require(`@/static/${image}`)" :class="`w-36 h-36 ${rounded ? 'rounded' : null}`">
+		<img id="img" :src="require(`@/static/${image}`)" :class="`${imgWidth} ${imgHeight} ${rounded ? 'rounded' : null}`">
 		<div class="text-center my-2">
 			<p class="font-semibold">{{ title }}</p>
-			<p class="text-sm">{{ desc }}</p>
+			<p v-if="desc" class="text-sm">{{ desc }}</p>
 		</div>
 	</div>
 </template>
@@ -21,12 +21,20 @@ export default {
 		},
 		desc: {
 			type: String,
-			default: "test"
+			default: null
 		},
 		rounded: {
 			type: Boolean,
 			default: false,
-		}
+		},
+		imgWidth: {
+			type: String,
+			default: "w-36"
+		},
+		imgHeight: {
+			type: String,
+			default: "h-36"
+		},
 	},
 	data() {
 		return {

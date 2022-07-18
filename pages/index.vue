@@ -22,7 +22,7 @@
 		<div>
 			<div class="flex justify-around mx-56 my-16">
 				<div v-for="(el, index) in values" :key="index">
-					<image-title-text :image="el.imgName" :title="el.title" :desc="el.description"></image-title-text>
+					<image-title-text :image="el.imgName" :title="el.title" :desc="el.description" :imgWidth="el.width" :imgHeight="el.heigth"></image-title-text>
 
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 
 			<div class="flex justify-around mx-56 my-16">
 				<div v-for="(el, index) in objectifs" :key="index">
-					<image-title-text :image="el.imgName" :title="el.title" :desc="el.description"></image-title-text>
+					<image-title-text :image="el.imgName" :title="el.title" :desc="el.description" :imgWidth="el.width" :imgHeight="el.heigth"></image-title-text>
 
 				</div>
 			</div>
@@ -115,36 +115,36 @@ export default {
 		return {
 			values: [
 				{
-					imgName: "image-accueil.png",
-					title: "Valeur 1",
-					description: "Description de la valeur",
+					imgName: "Group.png",
+					title: "Les rencontres",
+					width: "w-24",
+					heigth: "h-24"
 				},
 				{
-					imgName: "image-accueil.png",
-					title: "Valeur 2",
-					description: "Description de la valeur",
+					imgName: "Volunteering.png",
+					title: "La bienveillance",
+					width: "w-24",
+					heigth: "h-24"
 				},
 				{
-					imgName: "image-accueil.png",
-					title: "Valeur 3",
-					description: "Description de la valeur",
+					imgName: "emoji_ear.png",
+					title: "L'écoute",
+					width: "w-20",
+					heigth: "h-24"
 				},
 			],
 			objectifs: [
 				{
-					imgName: "image-accueil.png",
-					title: "Objectif 1",
-					description: "Description de l'objectif",
+					imgName: "icon_Hiking.png",
+					title: "S’entretenir physiquement",
+					width: "w-20",
+					heigth: "h-24"
 				},
 				{
-					imgName: "image-accueil.png",
-					title: "Objectif 2",
-					description: "Description de l'objectif",
-				},
-				{
-					imgName: "image-accueil.png",
-					title: "Objectif 3",
-					description: "Description de l'objectif",
+					imgName: "icon_links_fill.png",
+					title: "Permettre de créer des liens",
+					width: "w-24",
+					heigth: "h-24"
 				},
 			],
 			courses: [
