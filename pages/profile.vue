@@ -4,8 +4,8 @@
 
 		<div class="mx-56 my-16">
 			<div class="mb-16">
-				<div class="flex justify-between">
-					<h2 class="font-bold mb-4 greenText text-xl">Les prochains cours</h2>
+				<div class="flex justify-between items-center mb-4">
+					<h2 class="font-bold greenText text-xl">Les prochains cours</h2>
 					<Button backgroundColor="backgroundWhite" textColor="textGreen" text="Modifier mon profil" icon="fa-solid fa-gear"></Button>
 				</div>
 				<div class="flex">
@@ -75,27 +75,27 @@ export default {
     layout: "page",
 	data(){
 		return {
-			lastname: "ROUABLE",
-			firstname: "Pauline",
+			firstname: "Jane",
+			lastname: "Doe",
 
 			courses:[
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					course: "Fitness",
 					date: "24/05/2022",
 					hour: "18"
 				},
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					course: "Fitness",
 					date: "24/05/2022",
 					hour: "18"
 				},
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					course: "Fitness",
 					date: "24/05/2022",
 					hour: "18"
@@ -104,14 +104,14 @@ export default {
 
 			documents:[
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					documentType: "Carte d'identitée",
 					documentName: "NomDeLaCarte.pdf",
 				},
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					documentType: "Certicat médical",
 					documentName: "NomDuCertificat.pdf",
 				},
@@ -119,8 +119,8 @@ export default {
 
 			licencees:[
 				{
-					firstname: "Pauline",
-					lastname: "Rouable",
+					firstname: "Jane",
+					lastname: "Doe",
 					birthdate: "24/05/2000",
 				},
 			]

@@ -37,6 +37,11 @@
 					</nuxt-link>
 				</li>
 				<li>
+					<nuxt-link v-if="login" class="nuxt-link blue" to="/admin">
+						Administration
+					</nuxt-link>
+				</li>
+				<li>
 					<a v-if="login" class="nuxt-link violet" href="/" @click="logout">
 						Se déconnecter
 					</a>

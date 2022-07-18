@@ -2,7 +2,7 @@
 	<div>
 		<TitlePage title="Les cours" color="green"></TitlePage>
 
-		<div class="px-56 py-20">
+		<div class="px-48 py-20">
 			<div class="flex justify-end">
 				<Button text="Filtres" background-color="backgroundWhite" text-color="textGreen"></Button>
 			</div>

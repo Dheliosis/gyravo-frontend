@@ -32,3 +32,6 @@ For detailed explanation on how things work, check out the [documentation](https
 ## Technologies utilisées
 ### Nuxtjs
 ### tailwindcss
+
+## Pour se connecter
+Pour accéder au profil et à la partie administrative du projet, rentrez un lettre dans le champs email et dans le champs mot de passe dans la page de connexion.

@@ -1,5 +1,5 @@
 <template>
-	<div class="bgGreen h-screen w-1/6 rounded-r-3xl px-8 py-12 flex flex-col justify-between">
+	<div class="bgGreen h-screen w-1/6 rounded-r-3xl px-8 py-12 flex flex-col justify-between fixed">
 		<div>
 			<nuxt-link to="/" class="flex items-center justify-center">
 				<img src="../../static/logo_court-monochrome_blanc.png" class="w-1/3 rounded-lg" />

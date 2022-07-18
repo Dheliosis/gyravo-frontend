@@ -1,7 +1,7 @@
 <template>
 	<div class="h-screen flex">
 		<admin-menu />
-		<div class="w-full mx-4 my-4">
+		<div class="w-full mx-4 my-4 ml-64">
 			<Box class="">
 				<div class="w-full flex flex-col justify-center items-center">
 					<h1 class="text-xl font-bold mb-4">Informations générales</h1>
